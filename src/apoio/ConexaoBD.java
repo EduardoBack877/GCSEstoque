@@ -28,20 +28,20 @@ public class ConexaoBD {
             //prop.load(new FileInputStream("C:\\Users\\Eduardo Back\\Documents\\NetBeansProjects\\RecDesp\\db.properties"));
             String dbdriver = "org.postgresql.Driver";//prop.getProperty("db.driver");
 //      INTEGRACAO
-        if (currentDirectory.equals("/root/.jenkins/workspace/estoque_integracao")) {
-            dburl = "jdbc:postgresql://172.17.0.3:5432/GCSEstoque";
+        if (currentDirectory.equals("/root/.jenkins/workspace/EstoqueIntegracao")) {
+            dburl = "jdbc:postgresql://172.17.0.3:5432/estoque";
 
 //      HOMOLOGACAO
-        } else if (currentDirectory.equals("/root/.jenkins/workspace/estoque_homologacao")) {
-            dburl = "jdbc:postgresql://172.17.0.4:5432/GCSEstoque";
+        } else if (currentDirectory.equals("/root/.jenkins/workspace/EstoqueHomologacao")) {
+            dburl = "jdbc:postgresql://172.17.0.4:5432/estoque";
 
 //      PRODUCAO
-        } else if (currentDirectory.equals("/root/.jenkins/workspace/estoque_producao")) {
-            dburl = "jdbc:postgresql://172.17.0.5:5432/GCSEstoque";
+        } else if (currentDirectory.equals("/root/.jenkins/workspace/EstoqueProducao")) {
+            dburl = "jdbc:postgresql://172.17.0.5:5432/estoque";
 
 //      MAQUINA LOCAL
         } else {
-            dburl = "jdbc:postgresql://localhost:5432/GCSEstoque";
+            dburl = "jdbc:postgresql://localhost:5432/estoque";
         }
 
         String dbuser = "postgres";//prop.getProperty("db.user");
