@@ -19,7 +19,8 @@ public class Estoque {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new Login(null, true).setVisible(true);
+        //new Login(null, true).setVisible(true);
+        System.out.println("testesadhaksjdhkajshdkajshdjash");
         
     }
     
