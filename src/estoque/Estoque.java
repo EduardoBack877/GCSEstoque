@@ -20,7 +20,7 @@ public class Estoque {
      */
     public static void main(String[] args) {
         //new Login(null, true).setVisible(true);
-        System.out.println("testesadhaksjdhkajshdkajshdjash");
+        System.out.println("testando novamente");
         
     }
     
