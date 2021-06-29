@@ -24,10 +24,10 @@ public class MainWindow extends javax.swing.JFrame {
      * Creates new form JanelaPrincipal
      */
     public MainWindow() {
-        initComponents();
-
+        ///initComponents();
+        System.out.println("\nn### PROGRAMA DO EDUARDO\n\n ###");
         // abre tela maximizada
-        this.setExtendedState(MAXIMIZED_BOTH);
+        //this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
