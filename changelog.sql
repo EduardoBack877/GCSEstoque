@@ -27,3 +27,8 @@ ALTER TABLE "public"."movestoque" ADD CONSTRAINT "fk_movestoque_codprod" FOREIGN
 ALTER TABLE "public"."produto" DROP CONSTRAINT IF EXISTS "fk_codprat_prod";
 ALTER TABLE "public"."produto" ADD CONSTRAINT "fk_codprat_prod" FOREIGN KEY ("codprat") REFERENCES "public"."prateleira" ("id") ON UPDATE NO ACTION ON DELETE NO ACTION;
 
+
+-- changeset Back:1624927151130-2
+
+CREATE TABLE IF NOT EXISTS testandoprofessor ("id" SERIAL, "descricao" VARCHAR(500));
+
