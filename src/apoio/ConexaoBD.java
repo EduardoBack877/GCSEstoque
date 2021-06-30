@@ -27,19 +27,22 @@ public class ConexaoBD {
             Properties prop = new Properties();
             //prop.load(new FileInputStream("C:\\Users\\Eduardo Back\\Documents\\NetBeansProjects\\RecDesp\\db.properties"));
             String dbdriver = "org.postgresql.Driver";//prop.getProperty("db.driver");
-//      INTEGRACAO
+            
+            
+            
+                  //identifica a pasta de integração
         if (currentDirectory.equals("/root/.jenkins/workspace/EstoqueIntegracao")) {
-            dburl = "jdbc:postgresql://172.17.0.3:5432/estoque";
+    dburl = "jdbc:postgresql://172.17.0.3:5432/estoque";
 
-//      HOMOLOGACAO
+//identifica a pasta de homologação
         } else if (currentDirectory.equals("/root/.jenkins/workspace/EstoqueHomologacao")) {
             dburl = "jdbc:postgresql://172.17.0.4:5432/estoque";
 
-//      PRODUCAO
+// identifica a pasta de produção
         } else if (currentDirectory.equals("/root/.jenkins/workspace/EstoqueProducao")) {
             dburl = "jdbc:postgresql://172.17.0.5:5432/estoque";
 
-//      MAQUINA LOCAL
+// localhost
         } else {
             dburl = "jdbc:postgresql://localhost:5432/estoque";
         }
