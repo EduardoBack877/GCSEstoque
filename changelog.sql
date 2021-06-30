@@ -30,4 +30,6 @@ ALTER TABLE "public"."produto" ADD CONSTRAINT "fk_codprat_prod" FOREIGN KEY ("co
 -- changeset Back:2
 CREATE TABLE IF NOT EXISTS "tipo" ("id" integer, "descricao" VARCHAR(500));
 
+-- changeset Back:3
+CREATE TABLE IF NOT EXISTS "tipo2" ("id" integer, "descricao" VARCHAR(500));
 

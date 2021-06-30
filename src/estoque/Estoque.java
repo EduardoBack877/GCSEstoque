@@ -21,7 +21,7 @@ public class Estoque {
      */
     public static void main(String[] args) {
         //new Login(null, true).setVisible(true);
-        System.out.println("testando novamente - ALTERADO");
+        System.out.println("testando novamente - ALTERADO 2");
         GrupoProdDAO gDAO = new GrupoProdDAO();
         System.out.println(gDAO.consultarId(1).getDescricao());
         
