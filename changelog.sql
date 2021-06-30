@@ -1,6 +1,6 @@
 -- liquibase formatted sql
 
--- changeset Back:1624927151130-1
+-- changeset Back:1
 
 CREATE TABLE IF NOT EXISTS "public"."produto" ("id" SERIAL NOT NULL, "descricao" VARCHAR(150) NOT NULL, "cor" VARCHAR(50) NOT NULL, "marca" VARCHAR(150), "tamanho" VARCHAR(10), "qtd" INTEGER NOT NULL, "codsecao" INTEGER, "codgrupo" INTEGER, "codprat" INTEGER, CONSTRAINT "pk_id_prod" PRIMARY KEY ("id"));
 
@@ -27,8 +27,7 @@ ALTER TABLE "public"."movestoque" ADD CONSTRAINT "fk_movestoque_codprod" FOREIGN
 ALTER TABLE "public"."produto" DROP CONSTRAINT IF EXISTS "fk_codprat_prod";
 ALTER TABLE "public"."produto" ADD CONSTRAINT "fk_codprat_prod" FOREIGN KEY ("codprat") REFERENCES "public"."prateleira" ("id") ON UPDATE NO ACTION ON DELETE NO ACTION;
 
+-- changeset Back:2
+CREATE TABLE IF NOT EXISTS "tipo" ("id" integer, "descricao" VARCHAR(500));
 
--- changeset Back:1624927151130-2
-
-CREATE TABLE IF NOT EXISTS testandoprofessor ("id" SERIAL, "descricao" VARCHAR(500));
 

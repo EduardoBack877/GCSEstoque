@@ -20,4 +20,7 @@ public class ConexaoBDTest {
         conexao = ConexaoBD.getInstance().getConnection();
         assertTrue(conexao != null);
     }
+    
+    
+    
 }

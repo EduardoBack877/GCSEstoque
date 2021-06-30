@@ -5,6 +5,7 @@
  */
 package estoque;
 import apoio.ConexaoBD;
+import dao.GrupoProdDAO;
 import java.sql.Statement;
 import tela.Login;
 import tela.MainWindow;
@@ -20,7 +21,12 @@ public class Estoque {
      */
     public static void main(String[] args) {
         //new Login(null, true).setVisible(true);
-        System.out.println("testando novamente");
+        System.out.println("testando novamente - ALTERADO");
+        GrupoProdDAO gDAO = new GrupoProdDAO();
+        System.out.println(gDAO.consultarId(1).getDescricao());
+        
+        
+        
         
     }
     
